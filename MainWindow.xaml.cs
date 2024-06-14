@@ -80,7 +80,22 @@ namespace MyRecipeApp
 
         private void EditRecipeButton_Click(object sender, RoutedEventArgs e)
         {
-            // Implement edit recipe logic here
+            public void ScaleRecipe(double factor)
+            {
+                foreach (var ingredient in ingredients)
+                {
+                    ingredient.Quantity *= factor;
+                }
+            }
+
+            public void ResetQuantities()
+            {
+                foreach (var ingredient in ingredients)
+                {
+                    ingredient.Quantity = ingredient.OriginalQuantity;
+                }
+            }
+
         }
 
         private void DeleteRecipeButton_Click(object sender, RoutedEventArgs e)
@@ -95,4 +110,3 @@ namespace MyRecipeApp
     }
 }
 
-}
