@@ -8,7 +8,7 @@ How to Compile and Run
 
 GitHub Repository
 
-[RecipeManager Repository](https://github.com/username/RecipeManager)
+[RecipeManager Repository]([https://github.com/username/RecipeManager](https://github.com/SakhileKhuzwayo222/MyRecipeApp))
 
 Feedback Changes Description
 
