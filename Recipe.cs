@@ -11,6 +11,7 @@ namespace MyRecipeApp
         private readonly List<Ingredient> ingredients;
         private readonly List<RecipeStep> steps;
         public string Name { get; private set; }
+        public IEnumerable<object> Ingredients { get; internal set; }
 
         public delegate void CaloriesExceedHandler(Recipe recipe, double totalCalories);
         public event CaloriesExceedHandler CaloriesExceeded;

@@ -5,14 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyRecipeApp"
         mc:Ignorable="d"
-        Title="My Recipe App" Height="450" Width="800">
+        Title="My Recipe App" Height="531" Width="715">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="393*"/>
+            <ColumnDefinition Width="54*"/>
+            <ColumnDefinition Width="268*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Margin="10">
+        <StackPanel Orientation="Horizontal" Margin="10,10,10,10" Grid.ColumnSpan="3">
             <TextBox x:Name="FilterTextBox" Width="200" Margin="5" Text="Filter by Ingredient"/>
             <ComboBox x:Name="FoodGroupComboBox" Width="150" Margin="5">
                 <ComboBox.ItemTemplate>
@@ -32,7 +37,7 @@
         </StackPanel>
 
 
-        <Grid Grid.Row="1" Margin="10">
+        <Grid Grid.Row="1" Margin="10,10,10,10" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition Width="*"/>

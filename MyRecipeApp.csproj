@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <BaseOutputPath>C:\Users\Admin user\Dropbox\PC\Desktop\ST10340742-PROG6221-POE\bin\Debug</BaseOutputPath>
   </PropertyGroup>
 
 </Project>
